@@ -4,36 +4,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hi git! Pipeline is working successfully.'
+                echo 'Jana Build successfully'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Jana Test successfully'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Jana Deploy successfully'
             }
         }
     }
 }
-
-
-
-// pipeline {
-//     agent any
-
-//     stages {
-//         stage('Build') {
-//             steps {
-//                 echo 'Build successfully'
-//             }
-//         }
-//     }
-//     stages {
-//         stage('Test') {
-//             steps {
-//                 echo 'Test successfully'
-//             }
-//         }
-//     }
-//     stages {
-//         stage('Deploy') {
-//             steps {
-//                 echo 'Deploy successfully'
-//             }
-//         }
-//     }
-// }
